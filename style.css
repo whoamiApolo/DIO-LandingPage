@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(#aabdac, #dfdce3);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+main h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  padding: 1.6rem;
+}
+
+main h1::before {
+  content: "[ ";
+  color: lightblue;
+}
+main h1::after {
+  content: " ]";
+  color: lightblue;
+}
+
+hr {
+  width: 50%;
+  margin: 0 auto;
+  color: lightblue;
+}
+
+main h2,
+section h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main ul li {
+  list-style: none;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+main ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+section {
+  height: 85vh;
+  width: 80%;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+section p {
+  font-size: 1.6rem;
+  margin: 3rem;
+}
+
+section ul {
+  display: flex;
+}
+
+section ul li {
+  margin: 0 auto;
+  list-style: none;
+}
+section ul li a {
+  color: black;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+footer {
+  margin: 3.2rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 730px) {
+  section h2 {
+    font-size: 2rem;
+  }
+  section {
+    height: auto;
+    width: 90%;
+  }
+
+  footer {
+    font-size: 1.4rem;
+  }
+}
